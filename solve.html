@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
- <title>Title</title>
+ <title>Fizzbuzz</title>
  <!-- Required meta tags -->
  <meta charset="utf-8">
  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -14,49 +14,74 @@
 </head>
 
 <body>
- <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #ff993b;">
-  <a class="navbar-brand" href="index.html">Fizzbuzz</a>
+
+ <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+  <a class="navbar-brand" href="#">AM WEBDEV</a>
   <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
    aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"></button>
   <div class="collapse navbar-collapse" id="collapsibleNavId">
    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-    <li class="nav-item">
-     <a class="nav-link" href="index.html">Home </a>
-    </li>
     <li class="nav-item active">
-     <a class="nav-link" href="solve.html">Solve <span class="sr-only">(current)</span></a>
+     <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+    </li>
+    <li class="nav-item">
+     <a class="nav-link" href="solve.html">Solve</a>
     </li>
     <li class="nav-item">
      <a class="nav-link" href="code.html">Code</a>
     </li>
     <li class="nav-item">
-     <a class="nav-link" href="#" target="_blank">Github</a>
+     <a class="nav-link" href="#">Source</a>
     </li>
     <li class="nav-item">
-     <a class="nav-link" href="https://alexmaldonado-portfolio.netlify.app/" target="_blank">Portfolio</a>
-    </li>
-    <li class="nav-item">
-     <a class="nav-link" href="https://github.com/maldoalex/Fizzbuzz">Link</a>
+     <a class="nav-link" href="#">Portfolio</a>
     </li>
    </ul>
   </div>
  </nav>
 
- <div class="container pt-5">
+ <header class="jumbotron jumbotron-fluid">
+  <div class="container hero">
+   <div>
+
+    <h1 class="display-3">Fizzbuzz</h1>
+    <p class="lead">JS Coding Challenge</p>
+    <hr class="my-2">
+    <p class="lead">
+     <a class="btn btn-primary btn-lg" href="solve.html" role="button">See it in action</a>
+    </p>
+   </div>
+  </div>
+ </header>
+
+ <main class="container pt-3">
   <div class="row">
    <div class="col form-group">
-    <input type="number" class="form-control" id="input" placeholder="enter a number" value="3" />
+    <input class="form-control" id="input1" placeholder="enter number" type="text" />
    </div>
    <div class="col form-group">
-    <input class="form-control" id="input2" value="5">
+    <input class="form-control" id="input2" placeholder="enter number" type="text" />
    </div>
   </div>
   <div class="row">
    <div class="col-6 offset-3 form-group">
-    <button class="btn btn-outline-danger btnWide" value="Click me">Dont click me</button>
+    <button class="btn btn-outline-danger btnWide" id="fizzbuzzBtn">FizzBuzz it</button>
+   </div>
+   <div class="col-6 offset-3 form-group">
+    <button class="btn btn-outline-danger btnWide" id="clearBtn">Clear</button>
    </div>
   </div>
- </div>
+  <hr>
+  <div class="row">
+   <div class="col-4 offset-6">
+    <p id="fizzbuzzOutput"></p>
+   </div>
+  </div>
+  </div>
+ </main>
+
+
+
  <!-- Optional JavaScript -->
  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

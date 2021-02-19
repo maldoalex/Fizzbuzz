@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
- <title>Fizzbuzz</title>
+ <title>FizzBuzz</title>
  <!-- Required meta tags -->
  <meta charset="utf-8">
  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -15,7 +15,7 @@
 
 <body>
 
- <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+ <nav class="navbar navbar-expand-sm navbar-dark bg-danger">
   <a class="navbar-brand" href="#">AM WEBDEV</a>
   <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
    aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"></button>
@@ -40,42 +40,32 @@
   </div>
  </nav>
 
- <header class="jumbotron jumbotron-fluid">
-  <div class="container hero">
-   <div>
-
-    <h1 class="display-3">Fizzbuzz</h1>
-    <p class="lead">JS Coding Challenge</p>
-    <hr class="my-2">
-    <p class="lead">
-     <a class="btn btn-primary btn-lg" href="solve.html" role="button">See it in action</a>
-    </p>
-   </div>
-  </div>
- </header>
-
  <main class="container pt-3">
   <div class="row">
-   <div class="col-md">
+   <div class="col-md-3 text-danger">
     <h1>FizzBuzz</h1>
-    <p>Given 2 numbers(divisors), print out Fizz for one and Buzz for the other, or FizzBuzz for both.</p>
+    <p>Given 2 numbers(Divisors),the formula will print out Fizz for one and Buzz for the other, or FizzBuzz for both.
+    </p>
     <hr>
-    <p>Enter first number</p>
-    <input class="form-control" id="input1" placeholder="enter number" type="text" />
-    <p>Enter second number</p>
-    <input class="form-control" id="input2" placeholder="enter number" type="text" />
-    <hr>
-    <h1>Output</h1>
-    <div class="col-4 offset-6">
+    <input class="form-control mb-2" id="input1" placeholder="Enter First Number" type="text" />
+    <input class="form-control" id="input2" placeholder="Enter Second Number" type="text" />
+   </div>
+
+
+   <div class="col-md-9">
+
+    <div class="col-8 offset-2 text-danger">
      <p id="fizzbuzzOutput"></p>
     </div>
-    <br>
+
     <div class="col-6 offset-3 form-group">
-     <button class="btn btn-outline-danger btnWide" id="fizzbuzzBtn">FizzBuzz it</button>
+     <button class="btn btn-outline-danger btnWide" id="fizzbuzzBtn">FizzBuzz It</button>
     </div>
+
     <div class="col-6 offset-3 form-group">
      <button class="btn btn-outline-danger btnWide" id="clearBtn">Clear</button>
     </div>
+
    </div>
   </div>
  </main>

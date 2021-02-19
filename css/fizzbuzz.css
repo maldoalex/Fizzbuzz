@@ -1,3 +1,8 @@
-.btnWide{
+.btnWide {
  width: 100%;
+}
+
+body {
+ background-color: black;
+ overflow: hidden user-select: none margin: 0
 }
